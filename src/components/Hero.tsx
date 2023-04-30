@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
 		<div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
 			<BackgroundCircles />
 			<Image
-				src="https://brandeddavid.s3.eu-west-1.amazonaws.com/public/eatcodesleep.jpg"
+				src="https://brandeddavid.s3.eu-west-1.amazonaws.com/public/programmer.svg"
 				width={32}
 				height={32}
 				alt=""
