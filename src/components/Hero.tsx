@@ -2,8 +2,11 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Image from "next/image";
 import BackgroundCircles from "./BackgroundCircles";
+import Nav from "./Nav";
 
 type Props = {};
+
+// TODO: Uncomment <BackgroundCircles /> afer investigating and fixing multiple reloads bug issue
 
 const Hero = (props: Props) => {
 	const [text, count] = useTypewriter({
@@ -14,7 +17,7 @@ const Hero = (props: Props) => {
 
 	return (
 		<div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-			<BackgroundCircles />
+			{/* <BackgroundCircles /> */}
 			<Image
 				src="https://brandeddavid.s3.eu-west-1.amazonaws.com/public/programmer.svg"
 				width={32}
@@ -30,6 +33,10 @@ const Hero = (props: Props) => {
 					<span className="mr-3">{text}</span>
 					<Cursor cursorColor="green" />
 				</h1>
+			</div>
+
+			<div className="pt-5">
+				<Nav />
 			</div>
 		</div>
 	);
