@@ -28,6 +28,6 @@ body {
 
 @layer components {
 	.navigationButton {
-		@apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest transition-all hover:border-green-500 hover:text-green-500;
+		@apply px-6 py-2 border mt-5 border-[#242424] rounded-full uppercase text-xs tracking-widest transition-all hover:border-green-500 hover:text-green-500 md:mt-0;
 	}
 }
