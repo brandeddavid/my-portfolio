@@ -9,21 +9,21 @@ import WorkExperience from "@/components/WorkExperience";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	return (
-		<main className="text-gray-500 h-screen snap-y snap-mandatory overflow-scroll z-0">
-			<Head>
-				<title>David&apos;s Portfolio</title>
-			</Head>
-			<Header />
-			<section id="hero" className="snap-start">
-				<Hero />
-			</section>
-			<section id="about" className="snap-center">
-				<About />
-			</section>
-			<section id="experience" className="snap-center">
-				<WorkExperience />
-			</section>
-		</main>
-	);
+  return (
+    <main className="z-0 h-screen snap-y snap-mandatory overflow-scroll text-gray-500">
+      <Head>
+        <title>David&apos;s Portfolio</title>
+      </Head>
+      <Header />
+      <section id="hero" className="snap-start">
+        <Hero />
+      </section>
+      <section id="about" className="snap-center">
+        <About />
+      </section>
+      <section id="experience" className="snap-center">
+        <WorkExperience />
+      </section>
+    </main>
+  );
 }
